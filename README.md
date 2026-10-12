@@ -1,4 +1,5 @@
 # Tayiba Abdul Rasool
+[https://claude.ai/artifact/98HFp8eB9LPKwUCCPqqGo3](url)
 ### Software Engineering Student | AI & Machine Learning | Deep Learning | Generative AI
 
 I am a Software Engineering student at Minhaj University Lahore, passionate about Artificial Intelligence, Machine Learning, Deep Learning, and data-driven application development. I enjoy building practical projects, exploring new technologies, and applying programming and analytical skills to real-world problems.
