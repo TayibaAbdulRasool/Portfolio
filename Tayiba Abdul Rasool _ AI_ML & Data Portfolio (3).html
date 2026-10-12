@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tayiba Abdul Rasool | AI/ML & Data Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 72px);scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+*{box-sizing:border-box}
+body{margin:0;background:#f7f9fd;color:#14213d;font:400 17px/1.7 "IBM Plex Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.15;margin:0}
+a{color:#2358f2}
+:focus-visible{outline:3px solid #2358f2;outline-offset:2px}
+.wrap{max-width:920px;margin:0 auto;padding:0 22px}
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:rgba(247,249,253,.92);backdrop-filter:blur(12px);border-bottom:1px solid #e0e6f1}
+.bar{display:flex;align-items:center;gap:18px;height:62px}
+.logo{display:flex;align-items:center;gap:10px;font-family:"Bricolage Grotesque",sans-serif;font-weight:800;text-decoration:none;color:#14213d}
+.logo i{font-style:normal;display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#2358f2,#0fa88f);color:#fff;font-size:.85rem}
+.bar nav{margin-left:auto;display:flex;gap:20px;font-size:.95rem}
+.bar nav a{color:#56627c;text-decoration:none}.bar nav a:hover{color:#2358f2}
+.btn{display:inline-block;padding:10px 20px;border-radius:10px;border:1.5px solid #e0e6f1;color:#14213d;text-decoration:none;font-weight:500;font-size:.95rem;background:#fff;transition:transform .15s,border-color .15s}
+.btn:hover{border-color:#2358f2;color:#2358f2;transform:translateY(-1px)}
+.btn.p{background:#2358f2;border-color:#2358f2;color:#fff}
+.btn.p:hover{color:#fff;opacity:.92}
+.btns{display:flex;gap:10px;flex-wrap:wrap}
+.hero{padding:76px 0 60px;background:radial-gradient(700px 320px at 90% 0,#e9effd,transparent 70%)}
+.hero .tag{display:inline-block;background:#e9effd;color:#2358f2;padding:4px 14px;border-radius:99px;font-weight:500;font-size:.92rem;margin-bottom:18px}
+.hero h1{font-size:clamp(2.6rem,7vw,4rem);font-weight:800;letter-spacing:-.025em}
+.hero .role{font-size:1.2rem;color:#56627c;max-width:30em;margin:14px 0 28px}
+.nums{display:flex;gap:36px;flex-wrap:wrap;margin-top:40px;padding-top:26px;border-top:1px solid #e0e6f1}
+.nums b{display:block;font-family:"Bricolage Grotesque",sans-serif;font-size:2rem;color:#2358f2;line-height:1.1}
+.nums span{color:#56627c;font-size:.92rem}
+section{padding:60px 0}
+section.alt{background:#fff;border-top:1px solid #e0e6f1;border-bottom:1px solid #e0e6f1}
+.eyebrow{color:#2358f2;font-weight:500;font-size:.95rem;margin-bottom:6px}
+h2{font-size:clamp(1.8rem,4vw,2.3rem);margin-bottom:26px}
+.about p{margin:0 0 16px;color:#56627c;max-width:42em}
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.skill{background:#f7f9fd;border:1px solid #e0e6f1;border-radius:14px;padding:20px}
+.skill:last-child{grid-column:1/-1}
+.skill h3{font-size:1.05rem;margin-bottom:12px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips span{background:#e9effd;color:#14213d;padding:3px 11px;border-radius:99px;font-size:.86rem}
+.card{background:#fff;border:1px solid #e0e6f1;border-radius:16px;padding:28px;margin-bottom:22px;box-shadow:0 1px 2px rgba(20,33,61,.05),0 8px 24px rgba(20,33,61,.06)}
+.alt .card{background:#f7f9fd}
+.kind{display:inline-block;color:#2358f2;background:#e9effd;padding:2px 12px;border-radius:99px;font-size:.84rem;font-weight:500;margin-bottom:12px}
+.card h3{font-size:1.5rem;margin-bottom:8px}
+.card p{margin:0 0 12px;color:#56627c}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}
+.badges span{background:#e3f6f1;color:#0b7a68;padding:5px 13px;border-radius:8px;font-weight:500;font-size:.92rem}
+.card ul{margin:8px 0 14px;padding-left:20px;color:#56627c}.card li{margin:3px 0}
+.note{font-size:.92rem;font-style:italic}
+.stack{margin:14px 0 18px}
+.stack small{display:block;color:#56627c;margin-bottom:8px;font-size:.88rem}
+.pipe{margin:16px 0 8px}
+.pipe small{display:block;color:#56627c;margin-bottom:12px;font-size:.92rem}
+.steps{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(4,1fr);gap:12px;counter-reset:s}
+.steps li{counter-increment:s;position:relative;margin:0;padding:14px;border:1px solid #e0e6f1;border-radius:12px;background:#f7f9fd;font-size:.92rem;line-height:1.4;color:#14213d}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:#2358f2;color:#fff;font-weight:500;font-size:.85rem;margin-bottom:8px}
+.contact{text-align:center}
+.contact p{color:#56627c;max-width:30em;margin:0 auto 24px}
+.contact .btns{justify-content:center}
+footer{padding:22px 0;text-align:center;color:#56627c;font-size:.9rem;border-top:1px solid #e0e6f1}
+@media (max-width:700px){.skills{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.bar nav{display:none}.hire{margin-left:auto}.card{padding:22px}.hero{padding:50px 0 44px}.nums{gap:24px}}
+.hire{margin-left:0}
+
+@media (prefers-color-scheme:dark){
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 72px);scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+*{box-sizing:border-box}
+body{margin:0;background:#0c111d;color:#e8edf8;font:400 17px/1.7 "IBM Plex Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.15;margin:0}
+a{color:#7c9cff}
+:focus-visible{outline:3px solid #7c9cff;outline-offset:2px}
+.wrap{max-width:920px;margin:0 auto;padding:0 22px}
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:rgba(12,17,29,.92);backdrop-filter:blur(12px);border-bottom:1px solid #243049}
+.bar{display:flex;align-items:center;gap:18px;height:62px}
+.logo{display:flex;align-items:center;gap:10px;font-family:"Bricolage Grotesque",sans-serif;font-weight:800;text-decoration:none;color:#e8edf8}
+.logo i{font-style:normal;display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#7c9cff,#3fd0b6);color:#fff;font-size:.85rem}
+.bar nav{margin-left:auto;display:flex;gap:20px;font-size:.95rem}
+.bar nav a{color:#9aa6c0;text-decoration:none}.bar nav a:hover{color:#7c9cff}
+.btn{display:inline-block;padding:10px 20px;border-radius:10px;border:1.5px solid #243049;color:#e8edf8;text-decoration:none;font-weight:500;font-size:.95rem;background:#141b2b;transition:transform .15s,border-color .15s}
+.btn:hover{border-color:#7c9cff;color:#7c9cff;transform:translateY(-1px)}
+.btn.p{background:#7c9cff;border-color:#7c9cff;color:#0c111d}
+.btn.p:hover{color:#0c111d;opacity:.92}
+.btns{display:flex;gap:10px;flex-wrap:wrap}
+.hero{padding:76px 0 60px;background:radial-gradient(700px 320px at 90% 0,#1b2745,transparent 70%)}
+.hero .tag{display:inline-block;background:#1b2745;color:#7c9cff;padding:4px 14px;border-radius:99px;font-weight:500;font-size:.92rem;margin-bottom:18px}
+.hero h1{font-size:clamp(2.6rem,7vw,4rem);font-weight:800;letter-spacing:-.025em}
+.hero .role{font-size:1.2rem;color:#9aa6c0;max-width:30em;margin:14px 0 28px}
+.nums{display:flex;gap:36px;flex-wrap:wrap;margin-top:40px;padding-top:26px;border-top:1px solid #243049}
+.nums b{display:block;font-family:"Bricolage Grotesque",sans-serif;font-size:2rem;color:#7c9cff;line-height:1.1}
+.nums span{color:#9aa6c0;font-size:.92rem}
+section{padding:60px 0}
+section.alt{background:#141b2b;border-top:1px solid #243049;border-bottom:1px solid #243049}
+.eyebrow{color:#7c9cff;font-weight:500;font-size:.95rem;margin-bottom:6px}
+h2{font-size:clamp(1.8rem,4vw,2.3rem);margin-bottom:26px}
+.about p{margin:0 0 16px;color:#9aa6c0;max-width:42em}
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.skill{background:#0c111d;border:1px solid #243049;border-radius:14px;padding:20px}
+.skill:last-child{grid-column:1/-1}
+.skill h3{font-size:1.05rem;margin-bottom:12px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips span{background:#1b2745;color:#e8edf8;padding:3px 11px;border-radius:99px;font-size:.86rem}
+.card{background:#141b2b;border:1px solid #243049;border-radius:16px;padding:28px;margin-bottom:22px;box-shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.25)}
+.alt .card{background:#0c111d}
+.kind{display:inline-block;color:#7c9cff;background:#1b2745;padding:2px 12px;border-radius:99px;font-size:.84rem;font-weight:500;margin-bottom:12px}
+.card h3{font-size:1.5rem;margin-bottom:8px}
+.card p{margin:0 0 12px;color:#9aa6c0}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}
+.badges span{background:#133a35;color:#6fe0cb;padding:5px 13px;border-radius:8px;font-weight:500;font-size:.92rem}
+.card ul{margin:8px 0 14px;padding-left:20px;color:#9aa6c0}.card li{margin:3px 0}
+.note{font-size:.92rem;font-style:italic}
+.stack{margin:14px 0 18px}
+.stack small{display:block;color:#9aa6c0;margin-bottom:8px;font-size:.88rem}
+.pipe{margin:16px 0 8px}
+.pipe small{display:block;color:#9aa6c0;margin-bottom:12px;font-size:.92rem}
+.steps{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(4,1fr);gap:12px;counter-reset:s}
+.steps li{counter-increment:s;position:relative;margin:0;padding:14px;border:1px solid #243049;border-radius:12px;background:#0c111d;font-size:.92rem;line-height:1.4;color:#e8edf8}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:#7c9cff;color:#0c111d;font-weight:500;font-size:.85rem;margin-bottom:8px}
+.contact{text-align:center}
+.contact p{color:#9aa6c0;max-width:30em;margin:0 auto 24px}
+.contact .btns{justify-content:center}
+footer{padding:22px 0;text-align:center;color:#9aa6c0;font-size:.9rem;border-top:1px solid #243049}
+@media (max-width:700px){.skills{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.bar nav{display:none}.hire{margin-left:auto}.card{padding:22px}.hero{padding:50px 0 44px}.nums{gap:24px}}
+.hire{margin-left:0}
+
+}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap bar">
+<a class="logo" href="#top"><i>TR</i>Tayiba Abdul Rasool</a>
+<nav aria-label="Main"><a href="#about">About</a><a href="#skills">Skills</a><a href="#ai">AI &amp; ML</a><a href="#analysis">Data analysis</a><a href="#contact">Contact</a></nav>
+<a class="btn p hire" href="mailto:tayibaabdulrasool1@gmail.com">Email me</a>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+<span class="tag">Software Engineering student</span>
+<h1>Tayiba Abdul Rasool</h1>
+<p class="role">I build machine learning models, deep learning classifiers and AI-powered applications with Python.</p>
+<div class="btns">
+<a class="btn p" href="#ai">View projects</a>
+<a class="btn" href="https://github.com/TayibaAbdulRasool" target="_blank" rel="noopener">GitHub</a>
+<a class="btn" href="https://www.linkedin.com/in/tayiba-abdul-rasool/" target="_blank" rel="noopener">LinkedIn</a>
+</div>
+</div></div>
+
+<section id="about" class="alt"><div class="wrap about">
+<div class="eyebrow">About me</div>
+<h2>Building practical, data-driven solutions</h2>
+<p>I am a Software Engineering student with a strong interest in Artificial Intelligence and Machine Learning. I enjoy building practical, data-driven solutions and transforming ideas into functional applications. My experience includes developing machine learning and deep learning models, working with data analysis tools, and building AI-powered applications using Python and modern AI frameworks.</p>
+<p>I am continuously improving my technical skills through hands-on projects, exploring new technologies, and solving real-world problems. My goal is to grow as an AI Engineer, contribute to impactful projects, and develop intelligent solutions that combine innovation, efficiency, and usability.</p>
+</div></section>
+
+<section id="skills"><div class="wrap">
+<div class="eyebrow">Skills</div>
+<h2>Tools and technologies</h2>
+<div class="skills">
+<div class="skill"><h3>Programming &amp; data</h3><div class="chips"><span>Python</span><span>NumPy</span><span>Pandas</span><span>SQL</span><span>MySQL</span><span>Matplotlib</span><span>Seaborn</span><span>Excel</span></div></div>
+<div class="skill"><h3>Machine learning</h3><div class="chips"><span>Scikit-learn</span><span>XGBoost</span><span>Classification</span><span>Regression</span><span>Feature preprocessing</span><span>Model evaluation</span><span>Cross-validation</span><span>Hyperparameter tuning</span></div></div>
+<div class="skill"><h3>Deep learning</h3><div class="chips"><span>PyTorch</span><span>CNN</span><span>Torchvision</span><span>Image classification</span><span>Training &amp; validation</span></div></div>
+<div class="skill"><h3>Generative &amp; agentic AI</h3><div class="chips"><span>LangChain</span><span>LangGraph</span><span>LLMs</span><span>Mistral API</span><span>Tavily</span><span>Requests</span><span>Multi-agent workflows</span></div></div>
+<div class="skill"><h3>Apps &amp; tools</h3><div class="chips"><span>Streamlit</span><span>FastAPI basics</span><span>Django</span><span>Git &amp; GitHub</span><span>Kaggle Notebooks</span><span>VS Code</span></div></div>
+</div>
+</div></section>
+
+<section id="ai" class="alt"><div class="wrap">
+<div class="eyebrow">Projects</div>
+<h2>AI &amp; machine learning</h2>
+
+<article class="card">
+<span class="kind">Generative AI · Agentic AI</span>
+<h3>Generative AI Multi-Agent System</h3>
+<p>Researches a topic and produces a reviewed written output using four cooperating agents.</p>
+<div class="pipe"><small>My multi-agent research pipeline</small>
+<ol class="steps"><li>Search agent finds sources</li><li>Reader agent extracts content</li><li>Writer agent drafts the report</li><li>Critic agent reviews the draft</li></ol></div>
+<ul><li>Separate application, tools, agent and pipeline modules</li></ul>
+<div class="stack"><small>Skills used</small><div class="chips"><span>Python</span><span>LangGraph</span><span>LangChain</span><span>Mistral API</span><span>Tavily</span><span>BeautifulSoup</span><span>Streamlit</span></div></div>
+<div class="btns"><a class="btn p" href="https://github.com/TayibaAbdulRasool/GEN_AI_multi_agent_system" target="_blank" rel="noopener">View repository</a></div>
+</article>
+
+<article class="card">
+<span class="kind">Deep learning · Computer vision</span>
+<h3>The Leaf Ledger: Plant Disease Detection</h3>
+<p>An end-to-end image classifier, from training to a deployed web app.</p>
+<div class="badges"><span>94.53% test accuracy</span><span>94.66% validation accuracy</span><span>38 disease classes</span></div>
+<ul><li>Custom CNN in PyTorch and Torchvision</li><li>Streamlit app with image upload, predictions, confidence scores, alternative predictions, care notes and class evaluation information</li></ul>
+<div class="stack"><small>Skills used</small><div class="chips"><span>Python</span><span>PyTorch</span><span>Torchvision</span><span>CNN</span><span>Streamlit</span></div></div>
+<div class="btns"><a class="btn p" href="https://dlplantdiseasecnn-b6s5lig5gvdr8knxpf4dfs.streamlit.app/" target="_blank" rel="noopener">Open live app</a><a class="btn" href="https://github.com/TayibaAbdulRasool/DL_Plant_Disease_CNN" target="_blank" rel="noopener">View repository</a></div>
+</article>
+
+<article class="card">
+<span class="kind">Deep learning · Medical imaging</span>
+<h3>NeuroScan AI: Brain Tumor MRI Classification</h3>
+<p>A PyTorch CNN that sorts MRI scans into four classes.</p>
+<div class="badges"><span>92.56% test accuracy on 1,600 unseen images</span><span>95.27% validation accuracy</span></div>
+<ul><li>Training and validation workflow with saved model weights</li><li>Streamlit prediction interface</li></ul>
+<p class="note">An experimental image-classification project, not a clinically validated diagnostic tool.</p>
+<div class="stack"><small>Skills used</small><div class="chips"><span>Python</span><span>PyTorch</span><span>Torchvision</span><span>CNN</span><span>Streamlit</span></div></div>
+<div class="btns"><a class="btn p" href="https://dlbraintumormricnn-jomyzkazajbtvvkfrbkiaj.streamlit.app/" target="_blank" rel="noopener">Open live app</a><a class="btn" href="https://github.com/TayibaAbdulRasool/DL_Brain_Tumor_MRI_cnn" target="_blank" rel="noopener">View repository</a></div>
+</article>
+
+<article class="card">
+<span class="kind">Machine learning</span>
+<h3>ML Resume Analyzer</h3>
+<p>Compares several classifiers on about 30,001 records and serves the best one in an interactive app.</p>
+<div class="badges"><span>90.67% test accuracy</span><span>93.37% F1 score</span></div>
+<ul><li>Models: Logistic Regression, Decision Tree, Random Forest, KNN, SVM, XGBoost</li><li>Cross-validation and hyperparameter tuning</li><li>Streamlit app with saved model and scaler</li></ul>
+<div class="stack"><small>Skills used</small><div class="chips"><span>Python</span><span>Pandas</span><span>Scikit-learn</span><span>XGBoost</span><span>Streamlit</span></div></div>
+<div class="btns"><a class="btn p" href="https://tayibaabdulrasool-ml-resume-analyzer-app-vxq5rs.streamlit.app/" target="_blank" rel="noopener">Open live app</a><a class="btn" href="https://github.com/TayibaAbdulRasool/ML-resume-analyzer" target="_blank" rel="noopener">View repository</a></div>
+</article>
+</div></section>
+
+<section id="analysis"><div class="wrap">
+<div class="eyebrow">Projects</div>
+<h2>Data analysis</h2>
+
+<article class="card">
+<span class="kind">SQL and Python</span>
+<h3>Job Market Analysis</h3>
+<p>Explores job postings to see which skills, companies, locations and experience levels shape the market. MySQL queries pull and aggregate the data, then Python handles the analysis and charts.</p>
+<ul><li>Machine Learning (71) and Python (67) are the most requested skills</li><li>Entry-level roles analyzed separately (2 years of experience or less)</li><li>Seattle and San Francisco have the highest average salaries</li><li>Histogram, salary-gap analysis and experience-vs-salary scatter plot</li></ul>
+<div class="stack"><small>Skills used</small><div class="chips"><span>MySQL</span><span>SQL</span><span>Pandas</span><span>Matplotlib</span><span>Seaborn</span><span>Jupyter</span></div></div>
+<div class="btns"><a class="btn p" href="https://github.com/TayibaAbdulRasool/Job-Market-Analysis" target="_blank" rel="noopener">View repository</a></div>
+</article>
+
+<article class="card">
+<span class="kind">Credit risk</span>
+<h3>Bank Loan Risk Customer Analysis</h3>
+<p>What separates approved loan applicants from rejected ones? I analyzed 4,269 applications with 13 columns and no missing values.</p>
+<div class="badges"><span>Avg CIBIL score: 703 approved vs 429 rejected</span></div>
+<p>Credit score is the strongest factor. Education, self-employment and loan amount made little difference.</p>
+<div class="stack"><small>Skills used</small><div class="chips"><span>SQL</span><span>MySQL</span><span>Pandas</span><span>Matplotlib</span><span>Seaborn</span><span>Jupyter</span></div></div>
+<div class="btns"><a class="btn p" href="https://github.com/TayibaAbdulRasool/Bank_Loan_Risk_Customer_Analysis" target="_blank" rel="noopener">View repository</a></div>
+</article>
+
+<article class="card">
+<span class="kind">Business SQL</span>
+<h3>E-commerce Analysis</h3>
+<p>Answers 14 business questions about customers, orders, payments and delivery, written as SQL queries in MySQL and visualized in Python.</p>
+<div class="badges"><span>31,080 customers in São Paulo</span><span>12.5 days average delivery</span></div>
+<p>Also covers order status, payment installments, city-level revenue and monthly order trends.</p>
+<div class="stack"><small>Skills used</small><div class="chips"><span>MySQL</span><span>SQL</span><span>Pandas</span><span>Matplotlib</span><span>Seaborn</span><span>Jupyter</span></div></div>
+<div class="btns"><a class="btn p" href="https://github.com/TayibaAbdulRasool/Ecommerce-Analysis" target="_blank" rel="noopener">View repository</a></div>
+</article>
+</div></section>
+
+<section id="contact" class="alt contact"><div class="wrap">
+<h2>Get in touch</h2>
+<p>Open to internships and entry-level roles in GenAI, AI automation and data science.</p>
+<div class="btns">
+<a class="btn p" href="mailto:tayibaabdulrasool1@gmail.com">tayibaabdulrasool1@gmail.com</a>
+<a class="btn" href="https://www.linkedin.com/in/tayiba-abdul-rasool/" target="_blank" rel="noopener">LinkedIn</a>
+<a class="btn" href="https://github.com/TayibaAbdulRasool" target="_blank" rel="noopener">GitHub</a>
+</div>
+</div></section>
+</main>
+<footer>© Tayiba Abdul Rasool</footer>
+</body>
+</html>
